@@ -270,7 +270,7 @@ if (! function_exists('ascForm'))
 			//
 			// DROPDOWN
 			//
-			if ( $input['field'] == 'otro' ) {
+			if ( $input['field'] == 'dropdown' ) {
 				$form .= form_dropdown($data, $options, $selected, $extra);
 //				function form_dropdown($data = '', $options = [], $selected = [], $extra = ''): string
 			}
@@ -287,7 +287,7 @@ if (! function_exists('ascForm'))
 			//
 			// FIELDSET
 			//
-			if ( $input['field'] == 'otro' ) {
+			if ( $input['field'] == 'fieldset' ) {
 				$form .= form_fieldset(string $legend_text = '', array $attributes = []): string
 //				function form_fieldset(string $legend_text = '', array $attributes = []): string
 
