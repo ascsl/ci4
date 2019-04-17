@@ -157,6 +157,9 @@ if (! function_exists('ascForm'))
 		// Este ARRAY permite generar un INPUT por cada linea del ARRAY['fields']
 		foreach ( $formData['fields'] as $input ) {
 			
+			// Aqui inicializamos todas las variables que se usan en los parametros de las llamadas a las funciones
+			// Por tanto, si una CLAVE no esta definida en el array, se enviara como "vacia", 
+			// pero no habra error en la llamada a la funcion.
 			$field       = $input['field'];
 			$type        = '';
 			$data        = '';
@@ -328,6 +331,10 @@ if (! function_exists('ascForm'))
 				$form .= form_button($data, $content, $extra);
 //				function form_button($data = '', string $content = '', $extra = ''): string
 			}
+			
+			// Como añadir nuevas funciones:
+			// Si el "form_helper" se actualiza con nuevas funciones, bastara con incluir aqui
+			// un grupo de lineas como estas que se definen aqui, por ejemplo para "BUTTON"
 
 			//
 			// OTRO
