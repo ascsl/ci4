@@ -281,7 +281,6 @@ if (! function_exists('ascForm'))
 			//
 			// MULTISELECT
 			//
-			$type = $input['type'];
 			if ( $input['field'] == 'multiselect' ) {
 				$form .= form_multiselect($name, $options, $selected, $extra);
 //				function form_multiselect(string $name = '', array $options = [], array $selected = [], $extra = ''): string
@@ -317,7 +316,6 @@ if (! function_exists('ascForm'))
 			//
 			// RESET button
 			//
-			$type = $input['type'];
 			if ( $input['field'] == 'reset' ) {
 				$form .= form_reset($data, $value, $extra);
 //				function form_reset($data = '', string $value = '', $extra = ''): string
@@ -326,7 +324,6 @@ if (! function_exists('ascForm'))
 			//
 			// BUTTON
 			//
-			$type = $input['type'];
 			if ( $input['field'] == 'button' ) {
 				$form .= form_button($data, $content, $extra);
 //				function form_button($data = '', string $content = '', $extra = ''): string
