@@ -36,6 +36,7 @@
 	function parse_form_attributes($attributes, $default): string
 */
 
+
 /*	Ejemplo de ARRAY que debemos recibir en el parametro de la funcion
 	
 	En el elemento "form" debemos enviar todos los datos
